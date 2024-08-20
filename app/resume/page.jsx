@@ -232,41 +232,41 @@ const Resume = () => {
                 <div className='flex flex-col gap-[30px] text-center xl:text-left'>
                   <h3 className='text-4xl font-bold'>{skills.title}</h3>
                   <div>
-                    <p className='text-white/60 flex'>
+                    <p className='text-white/60 flex sm:flex-row flex-col'>
                       <div className='text-white'>
                         Programming Languages:&nbsp;
                       </div>
                       HTML, CSS, JavaScript, TypeScript,...
                     </p>
-                    <p className='text-white/60 flex'>
+                    <p className='text-white/60 flex sm:flex-row flex-col'>
                       <div className='text-white'>
                         Frameworks and libraries:&nbsp;
                       </div>
                       React, Next.js, Vue.js, jQuery,...
                     </p>
-                    <p className='text-white/60 flex'>
+                    <p className='text-white/60 flex sm:flex-row flex-col'>
                       <div className='text-white'>UI libraries:&nbsp;</div>
                       Material UI, Ant Design, Bootstrap, Shadcn/ui, Tailwind...
                     </p>
-                    <p className='text-white/60 flex'>
+                    <p className='text-white/60 flex sm:flex-row flex-col'>
                       <div className='text-white'>State management:&nbsp;</div>
                       Redux, Redux Saga, Redux Toolkit,Zustand,...
                     </p>
-                    <p className='text-white/60 flex'>
+                    <p className='text-white/60 flex sm:flex-row flex-col'>
                       <div className='text-white'>Databases:&nbsp;</div>MySQL,
                       SQLServer, MongoDB,...
                     </p>
-                    <p className='text-white/60 flex'>
+                    <p className='text-white/60 flex sm:flex-row flex-col'>
                       <div className='text-white'>Development Tools:&nbsp;</div>
                       Git, Figma, npm, yarn, Jest, Webpack, GCP, Azure,...
                     </p>
-                    <p className='text-white/60 flex'>
+                    <p className='text-white/60 flex sm:flex-row flex-col'>
                       <div className='text-white'>Agile methodology:&nbsp;</div>
                       Scrum
                     </p>
                   </div>
                 </div>
-                <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] mb-10 '>
+                <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-[30px] mb-10 '>
                   {skills.skillList.map((skill, index) => {
                     return (
                       <li key={index}>

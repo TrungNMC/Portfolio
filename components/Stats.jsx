@@ -8,7 +8,7 @@ const stats = [
     text: 'Years of experience',
   },
   {
-    num: 3,
+    num: 6,
     text: 'Project completed',
   },
   {
@@ -25,7 +25,7 @@ const Stats = () => {
   return (
     <section className='pt-4 pb-12 xl:pt-0 xl: pb-0'>
       <div className='container mx-auto'>
-        <div className='flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none'>
+        <div className='flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none flex-col sm:flex-row'>
           {stats.map((item, index) => {
             return (
               <div
@@ -40,8 +40,10 @@ const Stats = () => {
                 />
                 <p
                   className={`${
-                    item.text.length < 15 ? 'max-w-[100px]' : 'max-w-[150px]'
-                  } leading-snug text-white/80`}
+                    item.text.length < 15
+                      ? 'sm:max-w-[100px]'
+                      : 'sm:max-w-[150px]'
+                  } max-w-full leading-snug text-white/80`}
                 >
                   {item.text}
                 </p>
