@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { CiMenuFries } from 'react-icons/ci';
+import { Button } from './ui/button';
 
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from './ui/sheet';
 
@@ -23,10 +24,10 @@ const links = [
     name: 'work',
     path: '/work',
   },
-  {
-    name: 'contact',
-    path: '/contact',
-  },
+  // {
+  //   name: 'contact',
+  //   path: '/contact',
+  // },
 ];
 
 const MobileNav = () => {
@@ -60,6 +61,11 @@ const MobileNav = () => {
                 </Link>
               );
             })}
+            <Link href='/contact'>
+              <SheetClose>
+                <Button>Hire me</Button>
+              </SheetClose>
+            </Link>
           </nav>
         </SheetContent>
       </Sheet>
