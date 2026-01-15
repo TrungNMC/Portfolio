@@ -24,6 +24,18 @@ import WorkSliderBtns from '@/components/WorkSliderBtns';
 const projects = [
   {
     num: '01',
+    category: 'MEGANOVA AI',
+    title: 'MEGANOVA AI',
+    description:
+      'AI-powered platform leveraging advanced machine learning and artificial intelligence technologies to deliver innovative solutions.',
+    stack:
+      'HTML, CSS, JavaScript, TypeScript, NextJS, ReactJS, AI/ML, Figma, Git, Azure, Jira,...',
+    image: '/assets/work/thumb4.png',
+    live: '',
+    github: '',
+  },
+  {
+    num: '02',
     category: 'ASCOTT BRAND',
     title: 'ASCOTT BRAND',
     description:
@@ -34,7 +46,7 @@ const projects = [
     github: '',
   },
   {
-    num: '02',
+    num: '03',
     category: 'JOBKOREA',
     title: 'JOBKOREA',
     description:
@@ -46,7 +58,7 @@ const projects = [
     github: '',
   },
   {
-    num: '03',
+    num: '04',
     category: 'CLS_GTO',
     title: 'CLS_GTO',
     description:
@@ -148,7 +160,13 @@ const Work = () => {
                       <div className='absolute top-0 bottom-0 w-full h-full bg-black/10 z-10'></div>
                       {/* image */}
                       <div className='relative w-full h-full'>
-                        <Image src={project.image} fill className='' alt='' />
+                        <Image
+                          src={project.image}
+                          fill
+                          className=''
+                          alt=''
+                          unoptimized
+                        />
                       </div>
                     </div>
                   </SwiperSlide>

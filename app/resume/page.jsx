@@ -26,7 +26,7 @@ const about = {
     },
     {
       fieldName: 'Experience',
-      fieldValue: '3+ Years',
+      fieldValue: '4+ Years',
     },
     {
       fieldName: 'Nationality',
@@ -52,12 +52,17 @@ const experience = {
   icon: 'assets/resume/badge.svg',
   title: 'My experience',
   description:
-    'I am an FE developer with 3 years of web development experience. For 3 years, I worked at 2 companies: FPT Software and Mevivu.',
+    'I am an FE developer with over 4 years of web development experience. For 4 years, I worked at 2 companies: FPT Software and Mevivu.',
   items: [
+    {
+      company: 'Helix Mesh',
+      position: 'Front-end Developer',
+      duration: 'Otc 2024 - Present',
+    },
     {
       company: 'FPT Software',
       position: 'Front-end Developer',
-      duration: 'Dec 2021 - Present',
+      duration: 'Dec 2021 - Otc 2024',
     },
     {
       company: 'Mevivu',
